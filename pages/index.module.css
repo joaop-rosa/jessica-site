@@ -1,4 +1,10 @@
 .background{
     min-height: 100vh;
-    background: linear-gradient(180deg, #1E2327 0%, rgba(26, 29, 32, 0.54) 100%);
+    background: #1E2327;
+    /* background: linear-gradient(180deg, #1E2327 0%, rgba(26, 29, 32, 0.54) 100%); */
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 850px;
 }

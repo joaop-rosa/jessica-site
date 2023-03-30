@@ -1,0 +1,20 @@
+@font-face {
+    font-family: josefin-slab-regular;
+    src: url(../styles/fonts/JosefinSlab-Regular.ttf);
+}
+@font-face {
+    font-family: josefin-slab-medium;
+    src: url(../styles/fonts/JosefinSlab-Medium.ttf);
+}
+@font-face {
+    font-family: josefin-slab-semibold;
+    src: url(../styles/fonts/JosefinSlab-Semibold.ttf);
+}
+@font-face {
+    font-family: josefin-slab-bold;
+    src: url(../styles/fonts/JosefinSlab-Bold.ttf);
+}
+@font-face {
+    font-family: josefin-slab-thin;
+    src: url(../styles/fonts/JosefinSlab-Thin.ttf);
+}
