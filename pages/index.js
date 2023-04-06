@@ -1,7 +1,9 @@
-import Head from 'next/head';
-import { Banner } from '../components/banner';
-import { Header } from '../components/header';
-import s from './index.module.css';
+import Head from "next/head";
+import { Banner } from "../components/banner";
+import { Header } from "../components/header";
+import s from "./index.module.css";
+import { WhoAmi } from "../components/whoiam";
+import { MyWork } from "../components/myWork";
 
 export default function Home() {
   return (
@@ -13,13 +15,12 @@ export default function Home() {
 
       <Header />
       <div className={s.container}>
-          <Banner />
-
+        <Banner />
+        <WhoAmi />
+        <MyWork />
+        {/* https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript */}
       </div>
-     
-      
-
-    
     </div>
-  )
+  );
 }
+

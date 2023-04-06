@@ -1,0 +1,36 @@
+.workListWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.workWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--josefin-slab-medium);
+  font-size: 29.3px;
+  line-height: 31px;
+  letter-spacing: 0.05em;
+  color: #e0ae77;
+  fill: #e0ae77;
+}
+
+.icon {
+  width: 45px;
+}
+
+.isReverse {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.isGolden {
+  color: #e0ae77;
+  fill: #e0ae77;
+}
+
+.isWhite {
+  color: #ffffff;
+}
