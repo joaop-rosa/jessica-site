@@ -1,7 +1,9 @@
 import s from "./workList.module.css";
 import cn from "classnames";
+import { useBreakpoint } from "../hooks/useBreakpoint";
 
 export function WorkList({ list }) {
+  const { isSmallerThan525 } = useBreakpoint();
   const INDEX_CORRECTOR = 1;
   const isOdd = (number) => {
     return number % 2 != 0;
@@ -24,6 +26,7 @@ export function WorkList({ list }) {
         const { Icon, description } = work;
         return (
           <div
+            key={description}
             className={cn(s.workWrapper, {
               [s.isGolden]: isOdd(index + INDEX_CORRECTOR),
               [s.isWhite]: !isOdd(index + INDEX_CORRECTOR),

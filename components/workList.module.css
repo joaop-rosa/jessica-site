@@ -13,12 +13,13 @@
   font-size: 29.3px;
   line-height: 31px;
   letter-spacing: 0.05em;
-  color: #e0ae77;
-  fill: #e0ae77;
 }
 
 .icon {
-  width: 45px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .isReverse {
@@ -28,7 +29,6 @@
 
 .isGolden {
   color: #e0ae77;
-  fill: #e0ae77;
 }
 
 .isWhite {

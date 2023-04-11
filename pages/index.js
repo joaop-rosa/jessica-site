@@ -4,22 +4,42 @@ import { Header } from "../components/header";
 import s from "./index.module.css";
 import { WhoAmi } from "../components/whoiam";
 import { MyWork } from "../components/myWork";
+import { PerformanceLocations } from "../components/performanceLocations";
+import { useRef } from "react";
+import { Contact } from "../components/contact";
+import { Footer } from "../components/footer";
 
 export default function Home() {
+  const bannerRef = useRef(null);
+  const aboutRef = useRef(null);
+  const workRef = useRef(null);
+  const placesRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <div className={s.background}>
       <Head>
-        <title>Jéssica Birck</title>
+        <title>Jéssica Birck - Correspondência Jurídica</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header
+        refs={{
+          banner: bannerRef,
+          about: aboutRef,
+          work: workRef,
+          places: placesRef,
+          contact: contactRef,
+        }}
+      />
       <div className={s.container}>
-        <Banner />
-        <WhoAmi />
-        <MyWork />
-        {/* https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript */}
+        <Banner currentRef={bannerRef} />
+        <WhoAmi currentRef={aboutRef} />
+        <MyWork currentRef={workRef} />
+        <PerformanceLocations currentRef={placesRef} />
+        <Contact currentRef={contactRef} />
       </div>
+      <Footer bannerRef={bannerRef} />
     </div>
   );
 }

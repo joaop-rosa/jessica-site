@@ -1,0 +1,24 @@
+.footerWrapper {
+  width: 100%;
+  padding: 20px 0 20px;
+  border-top: solid rgba(128, 128, 128, 0.263) 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 32.5px;
+  line-height: 32px;
+  letter-spacing: 0.23em;
+  color: #e0ae77;
+  font-family: var(--josefin-slab-regular);
+  font-weight: 400;
+}
+
+.icon {
+  width: 50px;
+  color: #e0ae77;
+}

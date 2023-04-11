@@ -4,7 +4,7 @@ import s from "./whoAmi.module.css";
 import Image from "next/image";
 import cn from "classnames";
 
-export function WhoAmi() {
+export function WhoAmi({ currentRef }) {
   const { isSmallerThan900 } = useBreakpoint();
   const [width, setWidth] = useState(342);
   const [height, setHeight] = useState(449);
@@ -20,7 +20,7 @@ export function WhoAmi() {
   }, [isSmallerThan900]);
 
   return (
-    <div className={s.whoAmiWrapper}>
+    <div ref={currentRef} className={s.whoAmiWrapper}>
       <h1 className={s.title}>QUEM SOU</h1>
       <Image
         className={s.photo}
