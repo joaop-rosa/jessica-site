@@ -6,6 +6,11 @@ import cn from "classnames";
 import InstagramIcon from "/public/static/instagram-icon.svg";
 import WhatsappIcon from "/public/static/whatsapp-icon.svg";
 import LinkedinIcon from "/public/static/linkedin-icon.svg";
+import {
+  INSTAGRAM_LINK,
+  LINKEDIN_LINK,
+  WHATSAPP_LINK,
+} from "../constants/contacts";
 
 export function Header({ refs }) {
   const { isSmallerThan1200, isSmallerThan900 } = useBreakpoint();
@@ -92,21 +97,13 @@ export function Header({ refs }) {
         {!isSmallerThan900 ? renderMenuItems() : null}
 
         <div className={s.menuMediaIcons}>
-          <a
-            href="https://wa.me/5551998431851"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
             <WhatsappIcon className={s.icon} />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer">
             <InstagramIcon className={s.icon} />
           </a>
-          <a
-            href="https://www.linkedin.com/in/jessica-sabrina-birck-024122235/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
             <LinkedinIcon className={s.icon} />
           </a>
         </div>

@@ -127,7 +127,7 @@ export function PerformanceLocations({ currentRef }) {
   const [selectedCity, setSelectedCity] = useState(CITY_LIST.NOVO_HAMBURGO);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: process.env.GOOGLE_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
   });
 
   return (

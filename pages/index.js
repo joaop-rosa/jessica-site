@@ -20,7 +20,7 @@ export default function Home() {
     <div className={s.background}>
       <Head>
         <title>Jéssica Birck - Correspondência Jurídica</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
 
       <Header
