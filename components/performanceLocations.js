@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import s from "./performanceLocations.module.css";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import cn from "classnames";
@@ -138,6 +138,7 @@ export function PerformanceLocations({ currentRef }) {
           .sort((a, b) => sortAlphabeticaly(CITY_LIST[a], CITY_LIST[b]))
           .map((city) => (
             <p
+              key={city}
               onClick={() => setSelectedCity(CITY_LIST[city])}
               className={cn(s.cityName, {
                 [s.isSelectedCity]: selectedCity.name === CITY_LIST[city].name,

@@ -23,6 +23,7 @@ export function WhoAmi({ currentRef }) {
     <div ref={currentRef} className={s.whoAmiWrapper}>
       <h1 className={s.title}>QUEM SOU</h1>
       <Image
+        alt="Foto de Jéssica Birck"
         className={s.photo}
         src="/photo.png"
         width={width}
