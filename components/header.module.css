@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.title:hover {
+  color: white;
+}
+
 .menuWrapper {
   display: flex;
   gap: 54px;
@@ -44,6 +48,10 @@
   cursor: pointer;
 }
 
+.menu li:hover {
+  color: white;
+}
+
 .menuMediaIcons {
   display: flex;
   gap: 12px;
@@ -53,6 +61,10 @@
   width: 22px;
   height: 22px;
   color: #e0ae77;
+}
+
+.icon:hover {
+  color: white;
 }
 
 .menuMobile {

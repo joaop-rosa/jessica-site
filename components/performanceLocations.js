@@ -132,12 +132,12 @@ export function PerformanceLocations({ currentRef }) {
 
   return (
     <div ref={currentRef} className={s.performanceLocationsWrapper}>
-      <h1 className={s.title}>LOCAIS DE ATUAÇÃO</h1>
-      <div className={s.citiesWrapper}>
+      <h2 className={s.title}>LOCAIS DE ATUAÇÃO</h2>
+      <ul className={s.citiesWrapper}>
         {Object.keys(CITY_LIST)
           .sort((a, b) => sortAlphabeticaly(CITY_LIST[a], CITY_LIST[b]))
           .map((city) => (
-            <p
+            <li
               key={city}
               onClick={() => setSelectedCity(CITY_LIST[city])}
               className={cn(s.cityName, {
@@ -145,9 +145,9 @@ export function PerformanceLocations({ currentRef }) {
               })}
             >
               {CITY_LIST[city].name}
-            </p>
+            </li>
           ))}
-      </div>
+      </ul>
 
       <div className={s.mapWrapper}>
         {isLoaded ? (

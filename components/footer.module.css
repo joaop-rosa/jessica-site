@@ -22,3 +22,8 @@
   width: 50px;
   color: #e0ae77;
 }
+
+.footerWrapper:hover .title,
+.footerWrapper:hover .icon {
+  color: white;
+}

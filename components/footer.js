@@ -13,7 +13,7 @@ export function Footer({ bannerRef }) {
   return (
     <div onClick={() => handleScroll(bannerRef)} className={s.footerWrapper}>
       <BalanceIcon className={s.icon} />
-      <h1 className={s.title}>JÉSSICA BIRCK</h1>
+      <h2 className={s.title}>JÉSSICA BIRCK</h2>
     </div>
   );
 }

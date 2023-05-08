@@ -63,7 +63,7 @@ const WORK_LIST = [
 export function MyWork({ currentRef }) {
   return (
     <div ref={currentRef} className={s.myWorkWrapper}>
-      <h1 className={s.title}>MEU TRABALHO</h1>
+      <h2 className={s.title}>MEU TRABALHO</h2>
       <p className={s.text}>
         Grande parte das empresas não mais descolocam seus advogados/prepostos
         para a realização de uma série de diligências, as quais demandariam

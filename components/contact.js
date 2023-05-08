@@ -15,7 +15,7 @@ import {
 export function Contact({ currentRef }) {
   return (
     <div ref={currentRef} className={s.contactWrapper}>
-      <h1 className={s.title}>CONTATO</h1>
+      <h2 className={s.title}>CONTATO</h2>
       <p className={s.text}>Para contato tenho as opções abaixo:</p>
       <div className={s.contactItems}>
         <a className={s.contactItem}>

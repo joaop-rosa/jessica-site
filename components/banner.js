@@ -11,6 +11,7 @@ export function Banner({ currentRef }) {
       <div className={s.logo}>
         <Image
           src="/logo.png"
+          priority
           alt="Logo Jéssica Birck Correpondência Jurídica"
           width={width}
           height={height}

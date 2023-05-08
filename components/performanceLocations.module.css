@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.cityName:hover {
+  text-decoration: underline;
+}
+
 .isSelectedCity {
   color: #e0ae77;
   text-decoration: underline;
