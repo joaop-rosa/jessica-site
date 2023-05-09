@@ -9,9 +9,8 @@ export function Banner({ currentRef }) {
   return (
     <div ref={currentRef} className={s.banner}>
       <div className={s.logo}>
-        <Image
+        <img
           src="/logo.png"
-          priority
           alt="Logo Jéssica Birck Correpondência Jurídica"
           width={width}
           height={height}
